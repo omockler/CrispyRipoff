@@ -1,3 +1,4 @@
+//= require_tree
 margin = 4
 
 aspect_ratio = (photo) ->

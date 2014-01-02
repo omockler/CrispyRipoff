@@ -1,9 +1,7 @@
-require 'bundler/setup'
-require 'sinatra/base'
-require 'slim'
-require 'json'
+Bundler.require
 
 class App < Sinatra::Base
+
   get '/' do
     @images = Dir['public/images/*'].map { |i| i.gsub /public\//, '' }
 
