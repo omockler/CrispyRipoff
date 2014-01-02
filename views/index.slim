@@ -1,0 +1,14 @@
+html
+  head
+    link href="css/app.css" rel="stylesheet"
+    script src="//code.jquery.com/jquery-2.0.3.min.js"
+    script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"
+    script src="js/linear_partition.js"
+    script type="text/javascript"
+      == "window.images = #{@images.to_json};"
+    script src="js/app.js"
+  body
+    /.hide
+      /- @images.each do |path|
+      /  img.photo src="#{path}" /
+    #img-container
