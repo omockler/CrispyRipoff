@@ -3,9 +3,12 @@ html
     link href="assets/app.css" rel="stylesheet"
     script src="//code.jquery.com/jquery-2.0.3.min.js"
     script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"
-    script src="assets/linear_partition.js"
     script type="text/javascript"
       == "window.images = #{@images.to_json};"
     script src="assets/app.js"
   body
+    #img-viewer
+      div#background
+      div style="position: absolute; top: 0px; left: 0px; text-align: center;"
+        img#big-image
     #img-container

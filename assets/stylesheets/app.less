@@ -1,12 +1,55 @@
 @import "reset.less";
 
 body {
-	box-sizing: border-box;
-	margin: 2px 2px 2px 2px;
+  margin: 2px 2px 2px 2px;
 }
 
 .img {
-	margin: 2px 2px 2px 2px;
-	background-size: 100% 100%;
-	float: left;
+  margin: 2px 2px 2px 2px;
+  background-size: 100% 100%;
+  float: left;
+}
+
+#img-viewer {
+  background-color: rgba(0, 0, 0, 10);
+  color: rgba(0, 0, 0, 10);
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+img#background {
+    /*position: absolute;
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */
+    /*height: 20%; width: 20%; */ /* Using Glen Maddern's trick /via @mente */
+    height: 100%;
+    width: 100%;
+
+    // Browser Specific
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+}
+
+#big-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(5px);
+  
+}
+
+/* way the hell off screen */
+.scrollbar-measure {
+  width: 100px;
+  height: 100px;
+  overflow: scroll;
+  position: absolute;
+  top: -9999px;
 }
